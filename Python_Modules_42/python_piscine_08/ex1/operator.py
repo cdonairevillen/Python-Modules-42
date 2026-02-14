@@ -18,6 +18,13 @@ if __name__ == "__main__":
         Poetry generates an isolated venv defined by the .toml file.
         By using "poetry" as a runner, you execute the script in the
         poetry venv.
+
+    **NOTE: you may have memory space problems while creating a new venv
+    with Poetry. In that case, you'll need to delete old virtual environments
+    using:
+
+        - rm -rf ~/.cache/poetry/virtualenvs
+        - poetry cache clear --all
     """
 
     print("OPERATOR STATUS: Loading programs...")
